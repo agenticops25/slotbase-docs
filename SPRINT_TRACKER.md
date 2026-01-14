@@ -42,7 +42,7 @@
 | Day | Task | Status | Completed By | Date |
 |-----|------|--------|--------------|------|
 | 1 | Database schema updates | ✅ Done | Codex | Jan 14 |
-| 2 | Availability API endpoint | ⬜ Not Started | - | - |
+| 2 | Availability API endpoint | ✅ Done | Codex | Jan 14 |
 | 3 | Public facility page | ⬜ Not Started | - | - |
 | 4 | Booking hold flow | ⬜ Not Started | - | - |
 | 5 | Booking confirmation page | ⬜ Not Started | - | - |
