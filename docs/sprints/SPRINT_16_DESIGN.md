@@ -82,7 +82,7 @@ model SubscriptionUsage {
 ```prisma
 model TierFeature {
   id          String           @id @default(uuid()) @db.Uuid
-  tier        SubscriptionTier
+  tier        SubscriptionPlan // Use existing enum (STARTER, GROWTH, PRO, ENTERPRISE)
   featureKey  String           // 'online_payments', 'recurring_bookings', 'lessons', etc.
   enabled     Boolean          @default(true)
   limitValue  Int?             // null = unlimited
@@ -92,6 +92,10 @@ model TierFeature {
   @@unique([tier, featureKey])
   @@index([tier])
 }
+
+// Also add to ResourceType enum:
+// CRICKET_NET       - Indoor/outdoor practice nets
+// BOWLING_MACHINE   - Bowling machine lanes
 ```
 
 #### 1.3 Update Seed Data for Cricket
@@ -122,6 +126,7 @@ const facility = await prisma.facility.create({
 });
 
 // Resources: Cricket Nets and Bowling Machines
+// NOTE: Add CRICKET_NET and BOWLING_MACHINE to ResourceType enum first
 const resources = [
   { name: 'Net 1 - Indoor', type: 'CRICKET_NET', attributes: { surface: 'artificial', lighting: true, bowlingMachine: false } },
   { name: 'Net 2 - Indoor', type: 'CRICKET_NET', attributes: { surface: 'artificial', lighting: true, bowlingMachine: false } },
