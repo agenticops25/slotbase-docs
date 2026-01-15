@@ -158,6 +158,28 @@ Tier enforcement guards             ✅ Done (Day 10)
 
 ---
 
+## Post-Sprint Bug Fixes
+
+### Bug: Resources Not Saving During Onboarding (Fixed Jan 15, 2026)
+
+**Symptom**: New facilities created via onboarding wizard had 0 resources, even though the user added them in the wizard. Operating hours were saved correctly.
+
+**Root Cause**:
+1. `createFacilityDraft` API did not create a subscription record
+2. Resource creation API checks subscription limits via `SubscriptionGuardService`
+3. Guard threw "No subscription found" error
+4. Frontend resource creation loop had no error handling, silently swallowing errors
+
+**Fix Applied**:
+1. **API** (`admin.service.ts`): Now creates default STARTER subscription in TRIALING status when facility draft is created
+2. **Web** (`onboarding-wizard.tsx`): Added error handling to resource creation loop to surface errors to users
+
+**Commits**:
+- API: `93f406f` - fix: create default subscription during facility onboarding
+- Web: `82461c8` - fix: add error handling to resource creation in onboarding wizard
+
+---
+
 ## Notes
 
 - **Stripe Connect**: Deferred to Sprint 18. Offline payments work for pilot.
