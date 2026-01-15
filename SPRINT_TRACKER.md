@@ -45,7 +45,7 @@
 | 2 | Availability API endpoint | ✅ Done | Codex | Jan 14 |
 | 3 | Public facility page | ✅ Done | Codex | Jan 15 |
 | 4 | Booking hold flow | ✅ Done | Codex | Jan 15 |
-| 5 | Booking confirmation page | ⬜ Not Started | - | - |
+| 5 | Booking confirmation page | ✅ Done | Codex | Jan 15 |
 | 6 | Coach directory | ⬜ Not Started | - | - |
 | 7 | Email notifications | ⬜ Not Started | - | - |
 | 8 | Player dashboard | ⬜ Not Started | - | - |
