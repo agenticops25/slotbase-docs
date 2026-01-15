@@ -49,7 +49,7 @@
 | 6 | Coach directory | ✅ Done | Codex | Jan 15 |
 | 7 | Email notifications | ✅ Done | Codex | Jan 15 |
 | 8 | Player dashboard | ✅ Done | Codex | Jan 15 |
-| 9 | Tier selection | ⬜ Not Started | - | - |
+| 9 | Tier selection | ✅ Done | Codex | Jan 15 |
 | 10 | Testing & enforcement | ⬜ Not Started | - | - |
 
 **Status Legend**: ⬜ Not Started | 🔄 In Progress | ✅ Done | ❌ Blocked
