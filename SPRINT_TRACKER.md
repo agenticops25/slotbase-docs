@@ -23,7 +23,7 @@
 | 13 | Coach Dashboard | ✅ Done | Coach schedule view, block management |
 | 14 | Mobile Scaffold | ✅ Done | Expo setup, auth flow, tab navigation |
 | 15 | Onboarding Wizard | ✅ Done | Facility creation wizard (multi-step) |
-| **16** | **Player Booking** | 🔄 Current | Player booking flow, availability grid, tier enforcement |
+| **16** | **Player Booking** | ✅ Done | Player booking flow, availability grid, tier enforcement |
 | 17 | Notifications | 📋 Planned | Push notifications, SMS/WhatsApp |
 | 18 | Stripe Connect | 📋 Planned | Online payments integration |
 | 19 | Recurring Bookings | 📋 Planned | RRULE patterns, series management |
@@ -31,7 +31,7 @@
 
 ---
 
-## Sprint 16 Progress (Current)
+## Sprint 16 Progress (Complete)
 
 **Theme**: Player Booking & Production Readiness
 **Start Date**: January 14, 2026
@@ -148,12 +148,12 @@ Coaches:      GET/PATCH /coaches/me, CRUD /coaches/me/blocks
 Admin:        POST /invitations, PATCH /facilities/:id/suspend
 ```
 
-### To Implement (Sprint 16)
+### Implemented (Sprint 16)
 ```
 GET  /facilities/:id/availability   ✅ Done (Day 2)
-GET  /facilities/:id/coaches        ⬜
-GET  /coaches/:id                   ⬜
-GET  /coaches/:id/availability      ⬜
+GET  /facilities/:id/coaches        ✅ Done (Day 6)
+POST /bookings/confirm              ✅ Enhanced with email (Day 7)
+Tier enforcement guards             ✅ Done (Day 10)
 ```
 
 ---
