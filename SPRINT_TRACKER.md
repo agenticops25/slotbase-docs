@@ -50,7 +50,7 @@
 | 7 | Email notifications | ✅ Done | Codex | Jan 15 |
 | 8 | Player dashboard | ✅ Done | Codex | Jan 15 |
 | 9 | Tier selection | ✅ Done | Codex | Jan 15 |
-| 10 | Testing & enforcement | ⬜ Not Started | - | - |
+| 10 | Testing & enforcement | ✅ Done | Codex | Jan 15 |
 
 **Status Legend**: ⬜ Not Started | 🔄 In Progress | ✅ Done | ❌ Blocked
 
