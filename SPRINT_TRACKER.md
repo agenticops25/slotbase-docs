@@ -47,7 +47,7 @@
 | 4 | Booking hold flow | ✅ Done | Codex | Jan 15 |
 | 5 | Booking confirmation page | ✅ Done | Codex | Jan 15 |
 | 6 | Coach directory | ✅ Done | Codex | Jan 15 |
-| 7 | Email notifications | ⬜ Not Started | - | - |
+| 7 | Email notifications | ✅ Done | Codex | Jan 15 |
 | 8 | Player dashboard | ⬜ Not Started | - | - |
 | 9 | Tier selection | ⬜ Not Started | - | - |
 | 10 | Testing & enforcement | ⬜ Not Started | - | - |
