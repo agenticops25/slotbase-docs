@@ -86,7 +86,7 @@ web/src/app/
 │       ├── schedule/    ✅ Week view
 │       ├── blocks/      ✅ Block management
 │       └── students/    ✅ Student list
-└── facility/[slug]/     ⬜ PUBLIC PAGE (Sprint 16)
+└── facility/[slug]/     ✅ PUBLIC PAGE (Sprint 16 Day 3)
 ```
 
 ### Mobile Screens
@@ -150,7 +150,7 @@ Admin:        POST /invitations, PATCH /facilities/:id/suspend
 
 ### To Implement (Sprint 16)
 ```
-GET  /facilities/:id/availability   ⬜
+GET  /facilities/:id/availability   ✅ Done (Day 2)
 GET  /facilities/:id/coaches        ⬜
 GET  /coaches/:id                   ⬜
 GET  /coaches/:id/availability      ⬜
@@ -167,4 +167,4 @@ GET  /coaches/:id/availability      ⬜
 
 ---
 
-*Last Updated: January 14, 2026*
+*Last Updated: January 15, 2026*
