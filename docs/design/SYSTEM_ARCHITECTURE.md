@@ -844,7 +844,7 @@ class BookingController {
                     │                           │
                     ▼                           ▼
            ┌─────────────────┐        ┌─────────────────┐
-           │    Vercel       │        │    Railway      │
+           │    Vercel       │        │    Render       │
            │   (Next.js)     │        │   (NestJS)      │
            │                 │        │                 │
            │   Web App       │        │   API Server    │
@@ -855,7 +855,7 @@ class BookingController {
                               │                │                │
                               ▼                ▼                ▼
                     ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
-                    │   Railway    │  │   Upstash    │  │     R2       │
+                    │     Neon     │  │   Upstash    │  │     R2       │
                     │  PostgreSQL  │  │    Redis     │  │   Storage    │
                     └──────────────┘  └──────────────┘  └──────────────┘
 ```

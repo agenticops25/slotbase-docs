@@ -7,7 +7,7 @@ This guide covers deploying SlotBase to production environments.
 ```
 ┌─────────────────┐     ┌─────────────────┐     ┌─────────────────┐
 │   Mobile App    │     │    Web App      │     │   API Server    │
-│   (Expo/EAS)    │────▶│   (Vercel)      │────▶│   (Railway)     │
+│   (Expo/EAS)    │────▶│   (Vercel)      │────▶│   (Render)      │
 └─────────────────┘     └─────────────────┘     └────────┬────────┘
                                                          │
                         ┌────────────────────────────────┼────────────────────────────────┐
@@ -27,7 +27,7 @@ This guide covers deploying SlotBase to production environments.
 - Clerk account
 - Sentry account
 - Vercel account
-- Railway account
+- Render account
 - Expo/EAS account
 
 ---
@@ -127,17 +127,17 @@ EXPO_PUBLIC_SENTRY_DSN="https://...@sentry.io/..."
 
 ---
 
-## 5. API Deployment (Railway)
+## 5. API Deployment (Render)
 
-### Deploy to Railway
+### Deploy to Render
 
-1. Go to [railway.app](https://railway.app) and create a new project
+1. Go to [render.com](https://render.com) and create a new Web Service
 2. Connect your GitHub repository (`slotbase-api`)
-3. Railway will detect the `railway.toml` and `Dockerfile`
+3. Render will detect the `Dockerfile` or use Node.js buildpack
 
 ### Configure Environment Variables
 
-In Railway dashboard, add these variables:
+In Render dashboard, add these variables:
 
 ```bash
 NODE_ENV=production
@@ -153,13 +153,13 @@ RESEND_API_KEY=<from Resend>
 
 ### Custom Domain
 
-1. Add a custom domain in Railway (e.g., `api.slotbase.com`)
-2. Configure DNS CNAME record pointing to Railway
+1. Add a custom domain in Render (e.g., `api.slotbase.com`)
+2. Configure DNS CNAME record pointing to Render
 
 ### Post-Deployment
 
 ```bash
-# Run migrations (via Railway CLI or console)
+# Run migrations (via Render shell or deploy script)
 npx prisma migrate deploy
 
 # Seed database (first time only)
@@ -273,7 +273,7 @@ eas submit --platform android
 |--------|---------|---------|
 | slotbase.com | Vercel | Marketing site |
 | app.slotbase.com | Vercel | Web application |
-| api.slotbase.com | Railway | API server |
+| api.slotbase.com | Render | API server |
 
 ### DNS Records
 
@@ -281,8 +281,8 @@ eas submit --platform android
 # A/CNAME records for Vercel
 app.slotbase.com    CNAME   cname.vercel-dns.com
 
-# CNAME for Railway
-api.slotbase.com    CNAME   <railway-provided-domain>
+# CNAME for Render
+api.slotbase.com    CNAME   <render-provided-domain>
 ```
 
 ---
@@ -311,15 +311,11 @@ Consider using:
 
 ## 10. Rollback Procedures
 
-### API (Railway)
+### API (Render)
 
-```bash
-# View deployment history
-railway deployments
-
-# Rollback to previous deployment
-railway rollback
-```
+1. Go to Render dashboard → Your Service → Deploys
+2. Click on a previous successful deploy
+3. Click "Rollback to this deploy"
 
 ### Web (Vercel)
 

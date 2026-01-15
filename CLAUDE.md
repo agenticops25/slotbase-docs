@@ -66,7 +66,7 @@ Claude acts as the founding leadership team:
 - **Database**: PostgreSQL 15+ (Neon/Supabase free tier for MVP)
 - **Cache**: Upstash Redis (free tier for MVP)
 - **Storage**: Cloudflare R2 / AWS S3
-- **Hosting**: Railway/Render (Phase 1) → AWS (Phase 3)
+- **Hosting**: Render (Phase 1) → AWS (Phase 3)
 - **Auth**: Clerk or Auth0
 
 ### AI/ML
@@ -154,7 +154,7 @@ All design documentation lives in `/docs/`:
 - Mobile: React Native/Expo scaffold with auth flow
 - Database: PostgreSQL on Neon with comprehensive 60+ table schema
 - Auth: Clerk integration across all platforms
-- Deployment: Railway (API), Vercel (Web), EAS (Mobile)
+- Deployment: Render (API), Vercel (Web), EAS (Mobile)
 
 **Sprint 16 Goals (Current):**
 1. Player-facing booking flow (Web)

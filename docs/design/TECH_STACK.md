@@ -25,7 +25,7 @@ This document outlines the technology choices for SlotBase, with rationale for e
 | **Video Processing** | Mux | Adaptive streaming, thumbnails |
 | **AI/LLM** | OpenAI GPT-4 + Whisper | Best-in-class for text and transcription |
 | **Vector DB** | pgvector (PostgreSQL) | Start integrated, scale to Pinecone if needed |
-| **Hosting** | Railway / Render (Phase 1), AWS (Phase 3) | Managed simplicity early, control later |
+| **Hosting** | Render (Phase 1), AWS (Phase 3) | Managed simplicity early, control later |
 | **CDN** | Cloudflare | Global, fast, DDoS protection |
 | **Monitoring** | Sentry + Axiom | Error tracking + logs |
 | **Analytics** | PostHog | Product analytics, self-hostable |
@@ -574,8 +574,8 @@ Features:
 ### Phase 1: Managed Platform
 
 ```yaml
-Compute: Railway or Render
-Database: Railway PostgreSQL or Neon
+Compute: Render
+Database: Neon PostgreSQL
 Redis: Upstash
 ```
 
@@ -647,8 +647,8 @@ Pre-commit: Husky + lint-staged
 ```yaml
 CI: GitHub Actions
 CD:
-  - Preview: Vercel (web), Railway (API)
-  - Production: Railway → AWS (later)
+  - Preview: Vercel (web), Render (API)
+  - Production: Render → AWS (later)
 ```
 
 ---
@@ -683,7 +683,7 @@ CD:
 
 | Service | Monthly Cost | Notes |
 |---------|-------------|-------|
-| Railway (API + DB) | $20-50 | Based on usage |
+| Render (API) | $20-50 | Based on usage |
 | Upstash Redis | $10 | Serverless |
 | Clerk | $25 | Up to 10k MAU |
 | Stripe | 2.9% + $0.30 | Per transaction |
@@ -708,7 +708,7 @@ CD:
 | Auth | Clerk | Auth0, Supabase Auth | Modern DX, React integration |
 | Payments | Stripe | Square, PayPal | Developer experience, Connect |
 | AI Provider | OpenAI | Anthropic, Google | Best models, Whisper |
-| Hosting | Railway | Render, Fly.io | Balance of simplicity and control |
+| Hosting | Render | Railway, Fly.io | Balance of simplicity and control |
 | Queue | BullMQ | RabbitMQ, SQS | Simple, Redis-based |
 
 ---
