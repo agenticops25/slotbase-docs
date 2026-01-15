@@ -44,7 +44,7 @@
 | 1 | Database schema updates | ✅ Done | Codex | Jan 14 |
 | 2 | Availability API endpoint | ✅ Done | Codex | Jan 14 |
 | 3 | Public facility page | ✅ Done | Codex | Jan 15 |
-| 4 | Booking hold flow | ⬜ Not Started | - | - |
+| 4 | Booking hold flow | ✅ Done | Codex | Jan 15 |
 | 5 | Booking confirmation page | ⬜ Not Started | - | - |
 | 6 | Coach directory | ⬜ Not Started | - | - |
 | 7 | Email notifications | ⬜ Not Started | - | - |
