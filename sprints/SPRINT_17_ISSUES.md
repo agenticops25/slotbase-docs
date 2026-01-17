@@ -11,7 +11,7 @@
 
 | Issue | Title | Priority | Estimate | Status |
 |-------|-------|----------|----------|--------|
-| S17-1 | Fix Booking Price Display | High | 3 hrs | Pending |
+| S17-1 | Fix Booking Price Display | High | 3 hrs | Done |
 | S17-2 | Wire Admin Dashboard to Real API | High | 4 hrs | Pending |
 | S17-3 | Wire Admin Invitations Page | High | 6 hrs | Pending |
 | S17-4 | Build Admin Facilities List Page | Medium | 5 hrs | Pending |

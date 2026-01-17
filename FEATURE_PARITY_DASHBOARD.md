@@ -103,7 +103,7 @@
 | Check-in | ✅ | ✅ | ❌ | ❌ | ❌ | |
 | No-show marking | ✅ | ✅ | ❌ | ❌ | ❌ | |
 | Booking history | ✅ | ✅ | ❌ | ❌ | ❌ | |
-| Price display | ✅ | ⚠️ | ❌ | ❌ | ❌ | Sprint 17: fix hardcoded |
+| Price display | ✅ | ✅ | ❌ | ❌ | ❌ | Fixed Jan 17 |
 | Recurring bookings | ⚠️ | ❌ | ❌ | ❌ | ❌ | Sprint 21 |
 | Waitlist | ✅ | ❌ | ❌ | ❌ | ❌ | Sprint 21 |
 
@@ -183,7 +183,7 @@
 | Platform | Done | Partial | Missing | Total | Completion |
 |----------|------|---------|---------|-------|------------|
 | API | 62 | 4 | 5 | 71 | 87% |
-| Web | 38 | 12 | 21 | 71 | 54% |
+| Web | 39 | 11 | 21 | 71 | 55% |
 | Mobile | 2 | 1 | 52 | 55 | 4% |
 | Tests | 0 | 0 | 71 | 71 | 0% |
 | Docs | 0 | 0 | 71 | 71 | 0% |
@@ -192,7 +192,7 @@
 
 | Priority | Count | Status |
 |----------|-------|--------|
-| Critical (Booking) | 12 | ⚠️ 1 bug (price display) |
+| Critical (Booking) | 12 | ✅ Price display fixed |
 | High (Payments) | 8 | ✅ Offline complete |
 | High (Admin) | 6 | ⚠️ 3 bugs (mock data) |
 | Medium (Coach) | 8 | ⚠️ 1 bug (mock data) |
