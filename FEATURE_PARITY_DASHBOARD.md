@@ -114,7 +114,7 @@
 | Feature | API | Web | Mobile | Tests | Docs | Notes |
 |---------|-----|-----|--------|-------|------|-------|
 | Coach profile | ✅ | ✅ | ❌ | ❌ | ❌ | |
-| Coach dashboard | ✅ | ⚠️ | ❌ | ❌ | ❌ | Sprint 17: fix mock data |
+| Coach dashboard | ✅ | ✅ | ❌ | ❌ | ❌ | Fixed Jan 17 |
 | Schedule view | ✅ | ✅ | ❌ | ❌ | ❌ | Mobile: mock |
 | Block requests | ✅ | ✅ | ❌ | ❌ | ❌ | |
 | Student management | ✅ | ✅ | ❌ | ❌ | ❌ | |
@@ -168,7 +168,7 @@
 | Feature | API | Web | Mobile | Tests | Docs | Notes |
 |---------|-----|-----|--------|-------|------|-------|
 | Admin dashboard | ✅ | ✅ | 🚫 | ❌ | ❌ | Fixed Jan 17 |
-| Facility list | ✅ | ⚠️ | 🚫 | ❌ | ❌ | Sprint 17: build |
+| Facility list | ✅ | ✅ | 🚫 | ❌ | ❌ | Fixed Jan 17 |
 | Facility detail | ✅ | ❌ | 🚫 | ❌ | ❌ | Sprint 22 |
 | Suspend facility | ✅ | ❌ | 🚫 | ❌ | ❌ | Sprint 22 |
 | Invitation management | ✅ | ✅ | 🚫 | ❌ | ❌ | Fixed Jan 17 |
@@ -183,7 +183,7 @@
 | Platform | Done | Partial | Missing | Total | Completion |
 |----------|------|---------|---------|-------|------------|
 | API | 62 | 4 | 5 | 71 | 87% |
-| Web | 41 | 9 | 21 | 71 | 58% |
+| Web | 43 | 7 | 21 | 71 | 61% |
 | Mobile | 2 | 1 | 52 | 55 | 4% |
 | Tests | 0 | 0 | 71 | 71 | 0% |
 | Docs | 0 | 0 | 71 | 71 | 0% |
@@ -194,8 +194,8 @@
 |----------|-------|--------|
 | Critical (Booking) | 12 | ✅ Price display fixed |
 | High (Payments) | 8 | ✅ Offline complete |
-| High (Admin) | 6 | ⚠️ 1 bug (facility list) |
-| Medium (Coach) | 8 | ⚠️ 1 bug (mock data) |
+| High (Admin) | 6 | ✅ All done |
+| Medium (Coach) | 8 | ✅ All done |
 | Low (Mobile) | 55 | ❌ Deferred |
 
 ---

@@ -14,11 +14,11 @@
 | S17-1 | Fix Booking Price Display | High | 3 hrs | Done |
 | S17-2 | Wire Admin Dashboard to Real API | High | 4 hrs | Done |
 | S17-3 | Wire Admin Invitations Page | High | 6 hrs | Done |
-| S17-4 | Build Admin Facilities List Page | Medium | 5 hrs | Pending |
-| S17-5 | E2E Test: Facility Onboarding | Critical | 2 hrs | Pending |
-| S17-6 | E2E Test: Player Booking | Critical | 2 hrs | Pending |
-| S17-7 | E2E Test: Payment Recording | High | 1 hr | Pending |
-| S17-8 | Fix Coach Dashboard Mock Data | Medium | 4 hrs | Pending |
+| S17-4 | Build Admin Facilities List Page | Medium | 5 hrs | Done |
+| S17-5 | E2E Test: Facility Onboarding | Critical | 2 hrs | Done |
+| S17-6 | E2E Test: Player Booking | Critical | 2 hrs | Done |
+| S17-7 | E2E Test: Payment Recording | High | 1 hr | Done |
+| S17-8 | Fix Coach Dashboard Mock Data | Medium | 4 hrs | Done |
 
 **Total Estimate**: 27 hours
 
