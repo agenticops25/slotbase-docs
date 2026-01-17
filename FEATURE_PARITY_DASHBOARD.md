@@ -167,7 +167,7 @@
 
 | Feature | API | Web | Mobile | Tests | Docs | Notes |
 |---------|-----|-----|--------|-------|------|-------|
-| Admin dashboard | ✅ | ⚠️ | 🚫 | ❌ | ❌ | Sprint 17: fix mock |
+| Admin dashboard | ✅ | ✅ | 🚫 | ❌ | ❌ | Fixed Jan 17 |
 | Facility list | ✅ | ⚠️ | 🚫 | ❌ | ❌ | Sprint 17: build |
 | Facility detail | ✅ | ❌ | 🚫 | ❌ | ❌ | Sprint 22 |
 | Suspend facility | ✅ | ❌ | 🚫 | ❌ | ❌ | Sprint 22 |
@@ -183,7 +183,7 @@
 | Platform | Done | Partial | Missing | Total | Completion |
 |----------|------|---------|---------|-------|------------|
 | API | 62 | 4 | 5 | 71 | 87% |
-| Web | 39 | 11 | 21 | 71 | 55% |
+| Web | 40 | 10 | 21 | 71 | 56% |
 | Mobile | 2 | 1 | 52 | 55 | 4% |
 | Tests | 0 | 0 | 71 | 71 | 0% |
 | Docs | 0 | 0 | 71 | 71 | 0% |
@@ -194,7 +194,7 @@
 |----------|-------|--------|
 | Critical (Booking) | 12 | ✅ Price display fixed |
 | High (Payments) | 8 | ✅ Offline complete |
-| High (Admin) | 6 | ⚠️ 3 bugs (mock data) |
+| High (Admin) | 6 | ⚠️ 2 bugs (mock data) |
 | Medium (Coach) | 8 | ⚠️ 1 bug (mock data) |
 | Low (Mobile) | 55 | ❌ Deferred |
 
